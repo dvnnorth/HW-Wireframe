@@ -28,22 +28,10 @@ body {
     margin-top: 10px;
 }
 
-#main-body {
-    margin-top: 20px;
-}
-
-#main-body:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 #section-left {
     float: left;
     width: 60%;
-    height: 350px;
 }
-
 
 #section-article {
     background-color: #777;
@@ -60,7 +48,6 @@ body {
 #aside-right {
     float: left;
     width: 40%;
-    height: 350px;
 }
 
 #aside-header {
@@ -69,6 +56,12 @@ body {
 
 #main-footer {
     margin-top: 20px;
+}
+
+#main-footer::before{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 h1, p {
