@@ -13,6 +13,7 @@ body {
 
 .content-bg {
     background: #ebebeb;
+    margin: 10px 0px 10px 0px;
 }
 
 .heading-format {
@@ -20,17 +21,24 @@ body {
     text-align: center;
 }
 
-#top-header {
+#navbar {
     margin-top: 10px;
 }
 
-#navbar {
-    margin-top: 10px;
+#main-body {
+    overflow: hidden;
+}
+
+#main-body::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 #section-left {
     float: left;
     width: 60%;
+    border-right: 10px solid #777;
 }
 
 #section-article {
@@ -46,22 +54,14 @@ body {
 }
 
 #aside-right {
-    float: left;
     width: 40%;
+    float: right;
+    border-left: 10px solid #777;
+    height: 297px; /* this is a hack :( */
 }
 
 #aside-header {
     padding: 30px;
-}
-
-#main-footer {
-    margin-top: 20px;
-}
-
-#main-footer::before{
-    content: "";
-    display: block;
-    clear: both;
 }
 
 h1, p {
@@ -69,5 +69,5 @@ h1, p {
     background: #ebebeb;
     padding: 20px;
     text-align: center;
-    margin: 10px 20px 20px 20px;
+    margin: 0px 20px 10px 20px;
 }
