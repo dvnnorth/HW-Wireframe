@@ -32,6 +32,8 @@ p:last-child {
     text-align: center;
 }
 
+
+
 #navbar {
     margin-top: 10px;
 }
@@ -48,6 +50,10 @@ p:last-child {
     content: "";
     display: block;
     clear: both;
+}
+
+#top-header {
+    border-top: 10px solid #777;
 }
 
 #section-left {
