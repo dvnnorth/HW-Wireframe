@@ -25,7 +25,6 @@ p:last-child {
 
 .content-bg {
     background: #ebebeb;
-    margin: 10px 0px 10px 0px;
 }
 
 .heading-format {
@@ -38,7 +37,11 @@ p:last-child {
 }
 
 #main-body {
-    overflow: hidden;
+    overflow: auto;
+    background: #ebebeb;
+    padding: 0px;
+    border-top: 20px solid #777;
+    border-bottom: 20px solid #777;
 }
 
 #main-body::after{
@@ -50,7 +53,7 @@ p:last-child {
 #section-left {
     float: left;
     width: 55%;
-    border-right: 10px solid #777;
+    border-right: 20px solid #777;
 }
 
 #section-article {
@@ -68,8 +71,6 @@ p:last-child {
 #aside-right {
     width: 45%;
     float: right;
-    border-left: 10px solid #777;
-    height: 297px; /* this is a hack :( */
 }
 
 #aside-header {
